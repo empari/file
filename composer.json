@@ -1,6 +1,6 @@
 {
   "name": "empari/files",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Management Files for Laravel.",
   "keywords": ["empari", "files", "image"],
   "type": "library",
@@ -13,21 +13,6 @@
       "email": "suporte@empari.com.br"
     }
   ],
-  "require": {
-    "php": "^7.0",
-    "cviebrock/eloquent-sluggable": "^4.2",
-    "empari/support": "^1.0",
-    "laravel/framework": "5.4.*",
-    "league/fractal": "^0.16.0",
-    "league/flysystem-aws-s3-v3": "^1.0",
-    "prettus/l5-repository": "^2.6",
-    "intervention/image": "^2.3",
-    "spatie/laravel-fractal": "^3.3",
-    "spatie/laravel-tags": "^1.3"
-  },
-  "require-dev": {
-    "phpunit/phpunit": "~5.7"
-  },
   "autoload": {
     "psr-4": {
       "Empari\\Laravel\\Files\\": "src/"
@@ -42,5 +27,20 @@
     "preferred-install": "dist",
     "sort-packages": true,
     "optimize-autoloader": true
+  },
+  "require": {
+    "php": "^7.0",
+    "cviebrock/eloquent-sluggable": "^4.2",
+    "empari/support": "^1.0",
+    "laravel/framework": "5.4.*",
+    "league/fractal": "^0.16",
+    "league/flysystem-aws-s3-v3": "^1.0",
+    "prettus/l5-repository": "^2.6",
+    "intervention/image": "^2.3",
+    "spatie/laravel-fractal": "^3.3",
+    "spatie/laravel-tags": "^1.3"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~5.7"
   }
 }
