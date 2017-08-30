@@ -6,7 +6,6 @@ use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\UploadedFile;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
 use Empari\Support\Database\Traits\UuidsTrait;
@@ -199,6 +198,7 @@ class File extends Model
         //Save Image
         if ($savedFile->isImage()) {
             $image_normal = Image::make($file)->widen(800, function ($constraint) {
+                $constraint->aspectRatio();
                 $constraint->upsize();
             });
 
@@ -224,5 +224,22 @@ class File extends Model
         }
 
         return $savedFile;
+    }
+
+    /**
+     * Make Image from URL
+     *
+     * @param $url
+     * @param $destination_file
+     * @return string
+     */
+    public function makeImageFromUrl($url, $destination_file)
+    {
+        Image::make($url)->widen(800, function ($constraint) {
+            $constraint->aspectRatio();
+            $constraint->upsize();
+        })->save($destination_file);
+
+        return $destination_file;
     }
 }
