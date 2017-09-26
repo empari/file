@@ -1,7 +1,7 @@
 {
   "name": "empari/files",
   "version": "1.0.5",
-  "description": "Management Files for Laravel.",
+  "description": "Management Files for Laravel",
   "keywords": ["empari", "files", "image"],
   "type": "library",
   "license": "MIT",
