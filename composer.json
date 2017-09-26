@@ -1,6 +1,6 @@
 {
   "name": "empari/files",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Management Files for Laravel",
   "keywords": ["empari", "files", "image"],
   "type": "library",
@@ -32,7 +32,7 @@
     "php": "^7.0",
     "cviebrock/eloquent-sluggable": "^4.2",
     "empari/support": "^1.0",
-    "laravel/framework": "5.5.*",
+    "laravel/framework": "^5.5",
     "league/fractal": "^0.16",
     "league/flysystem-aws-s3-v3": "^1.0",
     "prettus/l5-repository": "^2.6",
