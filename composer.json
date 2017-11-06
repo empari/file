@@ -1,6 +1,6 @@
 {
   "name": "empari/files",
-  "version": "1.0.9",
+  "version": "5.5.0",
   "description": "Management Files for Laravel",
   "keywords": ["empari", "files", "image"],
   "type": "library",
