@@ -1,7 +1,7 @@
 <?php
 namespace Empari\Laravel\Files\Units\Files\Http\Requests;
 
-use Empari\Support\Http\Requests\FormRequest;
+use Empari\Laravel\Support\Http\Requests\FormRequest;
 
 class FileImageUploadRequest extends FormRequest
 {

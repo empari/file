@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
-use Empari\Support\Database\Traits\UuidsTrait;
+use Empari\Laravel\Support\Database\Traits\UuidsTrait;
 use Spatie\Tags\HasTags;
 
 /**
